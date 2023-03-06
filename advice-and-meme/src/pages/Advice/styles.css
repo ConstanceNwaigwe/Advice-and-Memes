@@ -5,6 +5,29 @@
   padding: 2px 0;
 }
 
+.advice_page_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.advice_page_nav h1 {
+  font-size: 26px;
+}
+
+.advice_page_nav p {
+  font-size: 16px;
+  border-radius: 16px;
+  border: 1px solid;
+  padding: 10px;
+}
+
+.advice_page_nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .advice_page_content {
   width: 500px;
   margin: 200px auto 100px;

@@ -1,5 +1,6 @@
 import "./styles.css";
 import React, { useState } from "react";
+import { Outlet, Link } from "react-router-dom";
 import { adviceData } from "./data";
 
 function Advice() {
@@ -15,12 +16,21 @@ function Advice() {
     setAdvice(adviceData[num].advice);
   };
 
+  // Render
   return (
     <div className="advice_page">
+      <div className="advice_page_nav">
+        <Link to="/advice">
+          <h1>A&amp;M</h1>
+        </Link>
+        <Link to="/meme">
+          <p>Laugh at Memes</p>
+        </Link>
+      </div>
       <div className="advice_page_container">
         <div className="advice_page_content">
           <div className="advice_page_content_info">
-            <h6>ADVICE #{num}</h6>
+            <h6>ADVICE #{num + 1}</h6>
             <p>{advice}</p>
             <div className="advice_page_content_info_divider">
               <div className="advice_page_content_info_divider_first" />
@@ -39,6 +49,7 @@ function Advice() {
           <button onClick={newAdviceOnClick}>New Advice</button>
         </div>
       </div>
+      <Outlet />
     </div>
   );
 }
