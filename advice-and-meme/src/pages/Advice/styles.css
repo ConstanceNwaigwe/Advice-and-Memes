@@ -1,0 +1,134 @@
+.advice_page {
+  background-color: #242838;
+  width: 100vw;
+  height: 100vh;
+  padding: 2px 0;
+}
+
+.advice_page_content {
+  width: 500px;
+  margin: 200px auto 100px;
+  background-color: #313a49;
+  padding: 50px;
+  border-radius: 32px;
+  position: relative;
+}
+
+.advice_page_content_info {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.advice_page_content_info h6 {
+  color: #5de8aa;
+  font-size: 16px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.advice_page_content_info p {
+  color: #c0d0da;
+  font-size: 30px;
+  width: fit-content;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.advice_page_content_info_divider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advice_page_content_info_divider_first,
+.advice_page_content_info_divider_forth {
+  width: 200px;
+  border-bottom: 1px solid #c0d0da;
+}
+
+.advice_page_content_info_divider_second,
+.advice_page_content_info_divider_third {
+  height: 20px;
+  border-left: 5px solid #c0d0da;
+  border-radius: 20%;
+}
+
+.advice_page_circle {
+  background-color: #5de8aa;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 265px;
+  bottom: -35px;
+}
+
+.advice_page_square {
+  background-color: #313a49;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  margin: 10px auto;
+  padding: 3px;
+}
+
+.advice_page_dot {
+  background-color: #5de8aa;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 6px auto;
+}
+
+.advice_page_button {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.advice_page_button button {
+  width: 140px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.advice_page_button button:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+@media (max-width: 720px) {
+  .advice_page_content {
+    width: 300px;
+    padding: 50px 20px;
+    margin: 100px auto 90px;
+  }
+
+  .advice_page_content_info {
+    width: 250px;
+  }
+
+  .advice_page_content_info_divider_first,
+  .advice_page_content_info_divider_forth {
+    width: 100px;
+  }
+
+  .advice_page_circle {
+    left: 135px;
+    bottom: -35px;
+  }
+}
