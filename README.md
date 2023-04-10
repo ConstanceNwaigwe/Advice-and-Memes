@@ -42,7 +42,7 @@
 
 ---
 
-* ### [Application](https://adviceandmemes.netlify.app/)
+* ### [Application](https://memesandadvice.netlify.app/)
 
 ---
 
